@@ -75,7 +75,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.costBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Backbutton = new System.Windows.Forms.Button();
             this.Cancelbutton = new System.Windows.Forms.Button();
             this.Finishbutton = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
@@ -514,15 +513,6 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Price";
             // 
-            // Backbutton
-            // 
-            this.Backbutton.Location = new System.Drawing.Point(427, 309);
-            this.Backbutton.Name = "Backbutton";
-            this.Backbutton.Size = new System.Drawing.Size(75, 23);
-            this.Backbutton.TabIndex = 29;
-            this.Backbutton.Text = "Back";
-            this.Backbutton.UseVisualStyleBackColor = true;
-            this.Backbutton.Click += new System.EventHandler(this.backButton);
             // 
             // Cancelbutton
             // 
@@ -551,7 +541,6 @@
             this.ClientSize = new System.Drawing.Size(687, 360);
             this.Controls.Add(this.Finishbutton);
             this.Controls.Add(this.Cancelbutton);
-            this.Controls.Add(this.Backbutton);
             this.Controls.Add(this.PriceGroupBox);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.TechSpecsGroupBox);
@@ -622,7 +611,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox costBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button Backbutton;
         private System.Windows.Forms.Button Cancelbutton;
         private System.Windows.Forms.Button Finishbutton;
     }
