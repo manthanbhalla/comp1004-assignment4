@@ -48,12 +48,10 @@ namespace Assignment4
            // aboutBox.Show();
         }
         //Helper method
-        private void populateFields(Control parent)
+        private void helper(Control parent)
         {
             selectedComputerInfo = orderform.SelectForm.GetSelected();
             string name;
-            //Iterate through all controls and insert values into appropriate textboxes
-            //Textboxes have been given the same names as the column headers + "TextBox"
             foreach (Control c in parent.Controls)
             {
                 if (c is TextBox)
@@ -63,7 +61,7 @@ namespace Assignment4
                 }
                 else if (c is GroupBox)
                 {
-                    populateFields(c);
+                    helper(c);
                 }
             }
             //Format value in the price fields
@@ -74,9 +72,9 @@ namespace Assignment4
                 SalesTaxBox.Text = (d * 0.13).ToString("C");
                 TotalBox.Text = (d * 1.13).ToString("C");
             }
-            if (productImages.ContainsKey(modelTextBox.Text))
+            if (productImages.ContainsKey(modelBox.Text))
             {
-                pictureBox.Image = productImages[modelTextBox.Text];
+                pictureBox.Image = productImages[modelBox.Text];
             }
         }
 
@@ -95,6 +93,11 @@ namespace Assignment4
         private void cancelButton(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void OrderForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
