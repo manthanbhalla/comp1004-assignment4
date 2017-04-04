@@ -38,7 +38,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(57, 65);
+            this.pictureBox2.Image = global::Assignment4.Properties.Resources.computer;
+            this.pictureBox2.Location = new System.Drawing.Point(57, 62);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(203, 206);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
